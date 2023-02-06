@@ -1,0 +1,31 @@
+<view>
+  <swiper interval="3000" circular vertical="{{false}}" indicator-dots="{{true}}" autoplay="{{true}}">                                                                               
+  <swiper-item>
+    <image data-post-id="0" bind:tap="onGoToDetail" src="/images/lpl.png">
+    </image>
+  </swiper-item>
+  <swiper-item>
+    <image data-post-id="3" bind:tap="onGoToDetail" src="/images/bestplayers.png"> 
+    </image>
+  </swiper-item>
+  <swiper-item>
+    <image data-post-id="4" bind:tap="onGoToDetail" src="/images/jumpfly.png">
+    </image>
+    </swiper-item>
+  </swiper>
+
+<!-- wx:for="{{posts}}" wx:key="postId" -->
+<!-- 事件 -->
+<!-- 先静 后动-->
+<!-- 自定义属性 -->
+<!-- <block wx:for="{{postList}}" wx:key="{{id}}"> -->
+<!-- for(var i)-->
+<!-- 序号  index-->
+
+<block wx:for="{{posts}}" wx:key="postId"  wx:for-item="item" wx:for-index="idx">
+	<post res="{{item}}" />
+</block>
+ <!-- </block> --> 
+</view>
+
+

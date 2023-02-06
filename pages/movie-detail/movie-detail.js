@@ -1,4 +1,4 @@
-// pages/welcome/welcome.js
+// pages/movie-detail/movie-detail.js
 Page({
 
   /**
@@ -7,31 +7,12 @@ Page({
   data: {
 
   },
-  onTap:function (params) {
-    console.log(123)
-    // 跳转页面
-    wx.switchTab({
-      url: "/pages/posts/posts"
-    })
-    // 子页面
-    // 子子页面  10
-    // 页面栈最多10
-    
-  },
-  onViewTap:function(params) {
-    console.log("on tap View")
-  },
-
-  onTextTap:function(params) {
-    console.log("on tap Text")
-  },
- 
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad:function (){
-    
+  onLoad(options) {
+
   },
 
   /**
@@ -58,8 +39,7 @@ Page({
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload:function () {
-    console.log("这是welcome，Unload")
+  onUnload() {
 
   },
 

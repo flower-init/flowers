@@ -1,13 +1,15 @@
 <!--pages/welcome/welcome.wxml-->
 <!-- <view> 标签  同div 做布局   容器 -->
 <view class="container">
-  <image class = "avatar" src="/images/avatar/1.jpg"></image>
-  <l-avatar placement="top" open-data="{{['userAvatarUrl','userNickName']}}" />
+  
+  <l-avatar class="l-avatar" placement="bottom" shape="circle" 
+  open-data="{{['userAvatarUrl','userNickName']}}" size="200"/>
   <text class="motto">Hello, 七月</text>
   <!--<button>开启小程序之旅</button> -->
-  <view class="journey-container">
+  <view bind:tap="onTap"  class="journey-container">
     <text class="journey">开启小程序之旅</text>
   </view>
 </view>
 <!-- flex 容器布局-->
 <!-- 路由API-->
+<!-- onTap 事件的回调函数 -->
